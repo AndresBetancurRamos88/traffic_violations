@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import Vehicle
 
+
 class VehicleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Vehicle
@@ -8,6 +9,7 @@ class VehicleSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         return instance
+
 
 class ReportSerializer(serializers.ModelSerializer):
     class Meta:
